@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+body{
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8c9eff;
+  padding: 20px;
+}
+
+.calculatorbody{
+  min-width: 350px;
+  height: 500px;
+  background-color: #202128;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.calculatorbody .header{
+  padding: 15px;
+  height: 20px;
+}
+
+.calculatorbody .calculations{
+  background: #202128;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.calculatorbody .buttons-container{
+  flex: 1;
+  background: #262831;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.calculatorbody .buttons-container .buttons{
+  all: unset;
+  background: #333333;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.calculatorbody .buttons-container .zero-button{
+  grid-column: span 2;
+}
+
+.calculatorbody .buttons-container .dot-button,
+.calculatorbody .buttons-container .equal-button{
+  grid-column: span 1;
+}
+
+.calculatorbody .buttons-container .special-button{
+  color: #87bce5;
+}
+
+.calculatorbody .buttons-container .operator-button{
+  color: #f18383;
+}
+
+.calculatorbody .buttons-container .equal-button{
+  background:#f18383 ;
+  transition: 0.3s ease;
+}
+
+.calculatorbody .buttons-container .buttons:hover{
+  background:rgba(104, 104, 104, 0.3) ;
+}
+
+.calculatorbody .buttons-container .equal-button:hover{
+  background:rgba(241, 131, 131,0.9) ;
+}
+
+.calculatorbody .buttons-container .buttons:active{
+  background:rgba(243, 243, 243, 0.3) ;
+}
+
+.calculatorbody .buttons-container .equal-button:active{
+  background:rgba(241, 131, 131,0.7) ;
+}
+
+
+
+
