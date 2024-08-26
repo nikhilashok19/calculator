@@ -14,11 +14,11 @@ body{
   justify-content: center;
   align-items: center;
   background: #8c9eff;
-  padding: 20px;
+  padding:50px;
 }
 
 .calculatorbody{
-  min-width: 350px;
+  min-width: 340px;
   height: 500px;
   background-color: #202128;
   color: white;
@@ -32,13 +32,16 @@ body{
 .calculatorbody .header{
   padding: 15px;
   height: 20px;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
 
 .calculatorbody .calculations{
   background: #202128;
+  color: white;
   height: 100px;
   padding: 20px;
-  color: white;
   font-size: 2.5rem;
   display: flex;
   justify-content: right;
@@ -69,7 +72,7 @@ body{
   font-size: 1.15rem;
   cursor: pointer;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s;
 }
 
 .calculatorbody .buttons-container .zero-button{
@@ -108,6 +111,133 @@ body{
 
 .calculatorbody .buttons-container .equal-button:active{
   background:rgba(241, 131, 131,0.7) ;
+}
+
+/* Toggle Button */
+.wrap-check-44 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.wrap-check-44 *,
+.wrap-check-44 ::after,
+.wrap-check-44 ::before {
+  box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.wrap-check-44 .switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.wrap-check-44 .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.wrap-check-44 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: 
+#fff;
+  border: 1px solid 
+#adb5bd;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.wrap-check-44 .slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.2em;
+  background-color: 
+#adb5bd;
+  transition: .4s;
+}
+
+.wrap-check-44 input:checked + .slider {
+  background-color: 
+#484848;
+  border: 1px solid 
+  #484848;
+}
+
+.wrap-check-44 input:focus + .slider {
+  box-shadow: 0 0 1px 
+  #484848;
+}
+
+.wrap-check-44 input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: 
+#fff;
+} 
+
+.wrap-check-44{
+  display: flex;
+  align-items: center;
+}
+
+
+/* Light Mode */
+.calculatorbody .header-light{
+  background:#e8e8e8;
+  color: black;
+  transition: background-color 0.4s;
+}
+.calculatorbody .calculations-light{
+  background:#eeeeee;
+  color: black;
+  transition: background-color 0.4s;
+}
+.calculatorbody .buttons-container-light {
+  background: #fafafafc;
+  transition: background-color 0.4s;
+}
+.calculatorbody .buttons-container .buttons-light {
+  background: #ffffff;
+  color: black;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculatorbody .buttons-container .buttons-light:hover{
+  background: #f5f5f5;
+}
+
+.calculatorbody .buttons-container .buttons-light:active{
+  background: #ededed;
+}
+
+.calculatorbody .buttons-container .equal-button-light {
+  background: #ef5350;
+  color: white;
+}
+.calculatorbody .buttons-container .equal-button-light:hover{
+  background: #f96967;
+}
+.calculatorbody .buttons-container .equal-button-light:active{
+  background: #fa7b79;
+}
+.calculatorbody .buttons-container .operator-button-light{
+  color: #ef5350;
+}
+.calculatorbody .buttons-container .special-button-light{
+  color: #419fe7;
 }
 
 
